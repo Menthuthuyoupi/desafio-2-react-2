@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+}
+
+.App {
+  font-family: "Maitree", serif;
+  text-align: center;
+  color: #43a047;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+
+/* Navbar */
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar {
+  background: #43a047;
+  padding: 20px;
+  color: white;
+}
+
+/* gallery */
+.gallery {
+  display: grid;
+  gap: 10px;
+}
+
+.grid-columns-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+.grid-columns-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.gallery .photo {
+  cursor: pointer;
+  padding: 10px 10px 0px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 200px;
+  color: white;
+}
+
+.p-3 {
+  padding: 30px;
+}
+
+
+.photoContainer{
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.photoContainer .firstPhoto{
+  width: 100%;
+}
+
+.photoContainer p {
+  font-size: 1rem;
+  color: white;
+  position: absolute;
+  top:85%;
+  left: 50%;
+  transform: translate(-50%,-50%)
+}
+
+.photoContainer i {
+  font-size: 1.3rem;
+  position: absolute;
+  top:15%;
+  left: 90%;
+  transform: translate(-50%,-50%)
+}
+
+.true{
+  color: red;
+}
+
+.false{
+  color: white;
+}
